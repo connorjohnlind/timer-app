@@ -12,7 +12,6 @@ export class TimerService {
   }
 
   startTimer() {
-    console.log('start timer');
     this.interval = setInterval(()=> {
       this.time += 1;
       this.timer$.next(this.time);
@@ -20,7 +19,6 @@ export class TimerService {
   }
 
   clearTimer() {
-    console.log('clear timer')
     clearInterval(this.interval);
   }
 
