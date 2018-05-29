@@ -1,0 +1,11 @@
+<div class="main">
+  <h4>
+    Timer with EventEmitter (parent component): event (in Controls) -> Parent -> prop (in Value)
+  </h4>
+  <app-timer-with-event-emitter-value
+    [value]="value">
+  </app-timer-with-event-emitter-value>
+  <app-timer-with-event-emitter-controls
+    (intervalEventFire)="onIntervalEventFire($event)">
+  </app-timer-with-event-emitter-controls>
+</div>
